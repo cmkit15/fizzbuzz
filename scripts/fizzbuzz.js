@@ -28,11 +28,7 @@ document.getElementById('submit').addEventListener('click', function () {
         document.getElementById('numbers').innerHTML = "";
         document.getElementById('results').innerHTML = "";
     } else {
-        document.getElementById('num1').value = "";
-        document.getElementById('num2').value = "";
-        document.getElementById('errorMessage').innerHTML = "";
-        document.getElementById('numbers').innerHTML = "";
-        document.getElementById('results').innerHTML = "";
+        reset();
         fizzBuzz();
         document.getElementById('numbers').innerHTML = "Your numbers are<br>" + num1 + " and " + num2 + "<br>";
         document.getElementById('results').innerHTML = fizzBuzz(num1, num2);
