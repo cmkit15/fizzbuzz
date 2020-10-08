@@ -25,7 +25,7 @@ p {
 }
 
 .site-info {
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -42,7 +42,6 @@ p {
 
 .results-section {
     max-width: 800px;
-    max-height: auto;
     margin: 0 auto 100px auto;
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -50,7 +49,6 @@ p {
 
 input {
     margin-top: 10px;
-    ;
 }
 
 button {
