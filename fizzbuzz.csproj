@@ -69,9 +69,11 @@
   <ItemGroup>
     <Content Include="code.html" />
     <Content Include="content\custom.css" />
+    <Content Include="content\prism.css" />
     <Content Include="images\buzz-md.jpg" />
     <Content Include="index.html" />
     <Content Include="scripts\fizzbuzz.js" />
+    <Content Include="scripts\prism.js" />
     <Content Include="solve.html" />
     <Content Include="Web.config" />
   </ItemGroup>
