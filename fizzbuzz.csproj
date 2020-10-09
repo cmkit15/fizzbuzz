@@ -71,6 +71,7 @@
     <Content Include="content\custom.css" />
     <Content Include="content\prism.css" />
     <Content Include="images\buzz-md.jpg" />
+    <Content Include="images\favicon.ico" />
     <Content Include="index.html" />
     <Content Include="scripts\fizzbuzz.js" />
     <Content Include="scripts\prism.js" />
