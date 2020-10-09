@@ -59,7 +59,7 @@
 
         <!-- Code Modal -->
         <div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Code</h5>
@@ -69,34 +69,50 @@
                     </div>
                     <div class="modal-body">
 <pre>
-<code class="language-javascript">
- // Function for calculating Fizz Buzz
- function fizzBuzz(num1, num2) {
- // Sets result as an empty string
-    let result = "";
-    // Loops through 1 - 100
-    for (let i = 1; i <= 100; i++) {
-        // Prints FIZZBUZZ for multiples of
-        // both numbers
-        if (i % num1 == 0 && i % num2 == 0) {
-            result += "FIZZBUZZ ";
-          // Prints Fizz for multiples of
-          // number 1
-        } else if (i % num1 == 0) {
-            result += "Fizz ";
-          // Prints Buzz for multiples of
-          // number 2
-        } else if (i % num2 == 0) {
-            result += "Buzz ";
-          // Prints the remaining numbers
-          // not divisible by either number
-        } else {
-            result += i + " ";
+    <code class="language-javascript">
+    // Function for calculating Fizz Buzz
+    function fizzBuzz(num1, num2) {
+        let result = "";
+        for (let i = 1; i <= 100; i++) {
+            if (i % num1 == 0 && i % num2 == 0) {
+                result += "<span style='color: deepskyblue'>FIZZ</span>" + "<span style='color: deepskyblue'>BUZZ</span> ";
+            } else if (i % num1 == 0) {
+                result += "<span style='color: limegreen'>Fizz</span> ";
+            } else if (i % num2 == 0) {
+                result += "<span style='color: orange'>Buzz</span> ";
+            } else {
+                result += i + " ";
+            }
+        }
+        return result;
     }
- }
- return result;
- }
-</code>
+
+    // Event listener for submit button
+    document.getElementById('submit').addEventListener('click', function () {
+        let num1 = parseInt(document.getElementById('num1').value);
+        let num2 = parseInt(document.getElementById('num2').value);
+        let errorMessage = "Please enter two numbers between 1 & 100";
+        if (isNaN(num1) || num1 < 1 || num1 > 100 || isNaN(num2) || num2 < 1 || num2 > 100) {
+            document.getElementById('errorMessage').innerHTML = errorMessage;
+            document.getElementById('numbers').innerHTML = "";
+            document.getElementById('results').innerHTML = "";
+        } else {
+            reset();
+            fizzBuzz();
+            document.getElementById('numbers').innerHTML = "Your numbers are<br>" + num1 + " and " + num2 + "<br>";
+            document.getElementById('results').innerHTML = fizzBuzz(num1, num2);
+        }
+    });
+
+    // Function to clear input
+    function reset() {
+        document.getElementById('num1').value = "";
+        document.getElementById('num2').value = "";
+        document.getElementById('errorMessage').innerHTML = "";
+        document.getElementById('numbers').innerHTML = "";
+        document.getElementById('results').innerHTML = "";
+    }
+    </code>
 </pre>
                     </div>
                     <div class="modal-footer">
