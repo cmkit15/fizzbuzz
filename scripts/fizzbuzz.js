@@ -5,11 +5,11 @@ function fizzBuzz(num1, num2) {
     // Loops through 1 - 100
     for (let i = 1; i <= 100; i++) {
         if (i % num1 == 0 && i % num2 == 0) {
-            result += "<span style='color: deepskyblue'>FIZZ</span>" + "<span style='color: deepskyblue'>BUZZ</span> ";
+            result += "<span class='deepskyblue'>FIZZ</span>" + "<span class='deepskyblue'>BUZZ</span> ";
         } else if (i % num1 == 0) {
-            result += "<span style='color: limegreen'>Fizz</span> ";
+            result += "<span class='limegreen'>Fizz</span> ";
         } else if (i % num2 == 0) {
-            result += "<span style='color: orange'>Buzz</span> ";
+            result += "<span class='orange'>Buzz</span> ";
         } else {
             result += i + " ";
         }

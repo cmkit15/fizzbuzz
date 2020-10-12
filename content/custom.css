@@ -60,6 +60,18 @@ button {
     line-height: 4rem;
 }
 
+.deepskyblue {
+    color: deepskyblue;
+}
+
+.limegreen {
+    color: limegreen;
+}
+
+.orange {
+    color: orange;
+}
+
 .code-section {
     width: 300px;
     margin-bottom: 50px;
