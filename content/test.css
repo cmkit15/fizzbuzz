@@ -25,9 +25,10 @@
 
 @media (max-width: 992px) {
     .left, .right, .solve-left, .solve-right {
-        width: 100%;        
+        width: 100%;
         position: relative;
     }
+
     .right, .solve-left {
         min-width: 0;
         height: auto;
@@ -58,8 +59,8 @@
 }
 
 .navbar-nav .nav-link:hover {
-   color: #fff;
-   text-decoration: line-through;
+    color: #fff;
+    text-decoration: line-through;
 }
 
 .navbar {
@@ -80,7 +81,7 @@
     border-color: rgba(255,255,255,.5);
 }
 
-h1 { 
+h1 {
     font-size: 4rem;
     font-weight: 300;
 }
@@ -104,8 +105,8 @@ p {
     max-width: 500px;
     height: auto;
     margin: 0 auto 100px auto;
-    font-size: 1.3rem;
-    line-height: 2.3rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
     color: white;
 }
 
@@ -146,11 +147,11 @@ button {
     background-color: #ff622b;
 }
 
-.btn-custom:hover {
-    color: #ff622b;
-    background-color: white;
-    border-color: #ff622b;
-}
+    .btn-custom:hover {
+        color: #ff622b;
+        background-color: white;
+        border-color: #ff622b;
+    }
 
 .btn-danger:hover {
     color: #dc3545;
@@ -163,3 +164,16 @@ button:focus {
     outline: 1px auto;
 }
 
+#fizzBuzzResults table, th, td {
+    border: 1px solid white;
+    padding: 3px;
+}
+
+.test-results {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto 100px auto;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: white;
+}

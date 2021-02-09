@@ -16,7 +16,6 @@ function fizzBuzz(num1, num2) {
     }
     return result;
 }
-// Console.log() can be used here to test function
 
 // Event listener for submit button
 document.getElementById('submit').addEventListener('click', function () {
